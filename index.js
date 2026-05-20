@@ -274,14 +274,13 @@ ${result}`;
   }).join('\n\n');
 
   return i.editReply({
-    embeds:[
-      new EmbedBuilder()
-        .setColor(COLOR)
-        .setTitle(`📜 Match History — ${u.name}#${u.tag}`)
-        .setDescription(history)
-    ]
-
-    });
+  embeds:[
+    new EmbedBuilder()
+      .setColor(COLOR)
+      .setTitle(`📜 Match History — ${u.name}#${u.tag}`)
+      .setDescription(history)
+  ]
+});
 }
 if(i.commandName==='winrate'){
 
@@ -666,19 +665,19 @@ if(i.commandName==='help'){
       },
 
       {
-  name:'🎯 إضافات',
-  value:
+        name:'🎯 إضافات',
+        value:
 `/crosshair
 /sens
 /suggestagent`,
-  inline:false
-}
+        inline:false
+      }
 
-);
+    );
 
-return i.reply({
-  embeds:[e]
-});
+  return i.reply({
+    embeds:[e]
+  });
 }
   
 if(i.commandName==='panel'){
