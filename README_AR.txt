@@ -1,0 +1,1 @@
+انسخ .env و data.json من البوت القديم إلى هذا المجلد. ثم شغل npm install ومن داخل المجلد شغل pm2 delete valorant-bot ثم pm2 start index.js --name valorant-bot ثم pm2 save.
